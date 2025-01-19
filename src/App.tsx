@@ -64,7 +64,6 @@ function App() {
                 <li>Azreen</li>
                 <li>Adil Karim Barbhuiya</li>
                 <li>Muhammad Ali</li>
-                <li>Adnan Anwar</li>
                 <li>Abdulrahman musse</li>
               </ul>
             </div>
@@ -84,6 +83,8 @@ function App() {
                 <li>Ayman Malik</li>
                 <li>Waseemat Nabeeha</li>
                 <li>Amira Rashad Taha Omer</li>
+                <li>Ayesha shajal</li>
+
               </ul>
             </div>
             <div>
@@ -91,29 +92,81 @@ function App() {
               <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Mohamed Azhan</li>
                 <li>Syed Mohammed Eshan Amir</li>
+                <li>Adnan Anwar</li>
                 <li>Sidrat Shamim</li>
                 <li>Henar Abdul Wahab</li>
                 <li>Aiman Maqsood</li>
-                <li>Ayesha shajal</li>
               </ul>
             </div>
           </div>
 
           {/* Group Activities */}
           <h3 className="text-xl font-bold mb-4 text-gray-800">Group Activities</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div>
-              <h4 className="text-lg font-semibold mb-2">Groups 1 & 2</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm sm:text-base">
-                <li>Distribution area at Chow Kit</li>
-                <li>Joint activities with all groups</li>
-              </ul>
+              <h4 className="text-lg font-semibold mb-2 text-blue-600">Group 1</h4>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="font-medium mb-2">Food & Water Distribution at Chow Kit</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                  <li>Work in pairs</li>
+                  <li>Person 1: Handles food bags</li>
+                  <li>Person 2: Manages distribution</li>
+                  <li>Ensure organized distribution</li>
+                </ul>
+              </div>
             </div>
+            
             <div>
-              <h4 className="text-lg font-semibold mb-2">Groups 3 & 4</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm sm:text-base">
-                <li>Distribution area at Pasar Seni</li>
-                <li>Joint activities with all groups</li>
+              <h4 className="text-lg font-semibold mb-2 text-blue-600">Group 2</h4>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="font-medium mb-2">Clothes Distribution at Chow Kit</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                  <li>Stationary distribution point</li>
+                  <li>Manage queuing system</li>
+                  <li>Help with clothes selection</li>
+                  <li>Maintain orderly process</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-2 text-blue-600">Groups 3 & 4</h4>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="font-medium mb-2">Distribution at Pasar Seni</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                  <li>Work in teams of 3 (1 brother, 2 sisters)</li>
+                  <li>Sister 1: Carries food boxes</li>
+                  <li>Sister 2: Carries food packets</li>
+                  <li>Brother: Handles distribution</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-2 text-blue-600">Food Package Details</h4>
+              <div className="bg-gray-50 rounded-lg p-3">
+                <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                  <li>Rice, chicken, and vegetables in box</li>
+                  <li>Separate curry bag</li>
+                  <li>1 water bottle per person</li>
+                  <li>Plastic utensils as needed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Safety Warning */}
+          <div className="mt-6 bg-red-50 rounded-lg shadow-lg p-4 sm:p-6 border-l-4 border-red-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-red-700">⚠️ Important Safety Notice:</h2>
+            <div className="text-red-800 text-sm sm:text-base space-y-2">
+              <p className="font-medium">The safety of all our members is our highest priority!</p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>Be aware that we are operating in areas with considerable risk</li>
+                <li>Avoid entering shady or poorly lit areas</li>
+                <li>Trust your instincts - if something feels off, it probably is</li>
+                <li>Immediately inform others in your group of any concerns</li>
+                <li>Don't wait to see what happens - leave the area if you feel unsafe</li>
+                <li>Stay with your group at all times</li>
               </ul>
             </div>
           </div>
