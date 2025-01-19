@@ -13,18 +13,18 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-4 sm:py-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-            <Logo />
-            <div className="flex flex-wrap items-center gap-4">
+      <header className="bg-white shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-3 py-2 sm:px-4 sm:py-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
+            <Logo className="self-center sm:self-auto" />
+            <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3">
               <div className="flex items-center space-x-2">
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                <span className="text-sm sm:text-base text-gray-600">February 15, 2025</span>
+                <span className="text-xs sm:text-base text-gray-600">February 15, 2025</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                <span className="text-sm sm:text-base text-gray-600">4 Groups</span>
+                <span className="text-xs sm:text-base text-gray-600">4 Groups</span>
               </div>
             </div>
           </div>
