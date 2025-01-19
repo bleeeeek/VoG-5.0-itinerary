@@ -136,7 +136,7 @@ function App() {
                 <ul className="list-disc list-inside space-y-2 text-gray-600 text-sm">
                   <li>Work in teams of 3 (1 brother, 2 sisters)</li>
                   <li>Sister 1: Carries food boxes</li>
-                  <li>Sister 2: Carries food packets</li>
+                  <li>Sister 2: Carries food packets and water bottles</li>
                   <li>Brother: Handles distribution</li>
                 </ul>
               </div>
