@@ -95,10 +95,11 @@ function App() {
                 <li>Mohamed Azhan</li>
                 <li>Syed Mohammed Eshan Amir</li>
                 <li>Adnan Anwar</li>
+                <li>Hamaad Dulvi</li>
                 <li>Sidrat Shamim</li>
                 <li>Henar Abdul Wahab</li>
                 <li>Aiman Maqsood</li>
-                <li>Hamaad Dulvi</li>
+                
               </ul>
             </div>
           </div>
