@@ -64,6 +64,7 @@ function App() {
                 <li>Azreen</li>
                 <li>Adil Karim Barbhuiya</li>
                 <li>Muhammad Ali</li>
+                <li>Umar Imran</li>
                 <li>Abdulrahman musse</li>
               </ul>
             </div>
@@ -71,9 +72,10 @@ function App() {
               <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 2 Members</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Refaat Hatem</li>
-                <li>Umar Imran</li>
                 <li>Naseem Ali Mansoor Ali</li>
                 <li>Muhammad Ahad</li>
+                <li>Moataz Alawadi</li>
+                <li>Shaif Harmal</li>
               </ul>
             </div>
             <div>
@@ -96,6 +98,7 @@ function App() {
                 <li>Sidrat Shamim</li>
                 <li>Henar Abdul Wahab</li>
                 <li>Aiman Maqsood</li>
+                <li>Hamaad Dulvi</li>
               </ul>
             </div>
           </div>
