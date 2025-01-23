@@ -24,7 +24,7 @@ function App() {
               </div>
               <div className="flex items-center space-x-2">
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                <span className="text-xs sm:text-base text-gray-600">4 Groups</span>
+                <span className="text-xs sm:text-base text-gray-600">5 Groups</span>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 1 Members</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>Azreen</li>
+                <li>Muhammad Ahad</li>
                 <li>Adil Karim Barbhuiya</li>
                 <li>Muhammad Ali</li>
                 <li>Umar Imran</li>
@@ -73,7 +73,6 @@ function App() {
               <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Refaat Hatem</li>
                 <li>Naseem Ali Mansoor Ali</li>
-                <li>Muhammad Ahad</li>
                 <li>Moataz Alawadi</li>
                 <li>Shaif Harmal</li>
               </ul>
@@ -99,7 +98,13 @@ function App() {
                 <li>Sidrat Shamim</li>
                 <li>Henar Abdul Wahab</li>
                 <li>Aiman Maqsood</li>
-                
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 5 Members</h3>
+              <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
+                <li>Azreen</li>
+                <li>Sara</li>
               </ul>
             </div>
           </div>
