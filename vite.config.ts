@@ -5,7 +5,7 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/VoG-5.0-itinerary/',
+  base: './',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
