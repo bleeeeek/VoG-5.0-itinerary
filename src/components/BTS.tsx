@@ -11,6 +11,12 @@ export const BTS: React.FC = () => {
     ? photos 
     : photos.filter(photo => photo.category === selectedCategory);
 
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    console.error('Image failed to load:', e.currentTarget.src);
+    // Optionally set a fallback image
+    // e.currentTarget.src = '/fallback-image.png';
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
       <div className="flex justify-between items-center mb-6">
@@ -41,6 +47,7 @@ export const BTS: React.FC = () => {
                 src={photo.url}
                 alt={photo.description}
                 className="absolute inset-0 w-full h-full object-cover"
+                onError={handleImageError}
               />
             </div>
             
