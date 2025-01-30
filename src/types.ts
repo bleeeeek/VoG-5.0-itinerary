@@ -23,10 +23,7 @@ export interface Vehicle {
   inventory: {
     foodPacks: number;
     waterBottles: number;
-    clothes?: {
-      men: number;
-      women: number;
-    };
+    clothingBoxes?: number;
   };
 }
 
@@ -39,4 +36,28 @@ export interface InventoryLocation {
   };
   foodPacks: number;
   waterBottles: number;
+}
+
+export interface ClothingInventory {
+  women: {
+    shirts: number;
+    dresses: number;
+    formalShirts: number;
+    pants: number;
+    jacketsAndHoodies: number;
+    abayahs: number;
+    prayerClothes: number;
+    niqabs: number;
+    prayerSets: number;
+  };
+  men: {
+    shirts: number;
+    pants: number;
+    thobes: number;
+    suits: number;
+  };
+  household: {
+    towels: number;
+    bedsheets: number;
+  };
 }
