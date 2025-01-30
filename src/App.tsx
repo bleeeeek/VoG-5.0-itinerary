@@ -28,7 +28,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                  <span className="text-xs sm:text-base text-gray-600">7 Groups</span>
+                  <span className="text-xs sm:text-base text-gray-600">6 Groups • 27 Volunteers</span>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 4 Members</h3>
+                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 3 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Allawi</li>
                   <li>Aslam Anis</li>
@@ -92,7 +92,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 5 Members</h3>
+                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 4 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Saira Rafique</li>
                   <li>Ayman Malik</li>
@@ -102,7 +102,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 6 Members</h3>
+                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 5 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Mohamed Azhan</li>
                   <li>Syed Mohammed Eshan Amir</li>
@@ -113,7 +113,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 7 Members</h3>
+                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 6 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Azreen</li>
                   <li>Sara</li>
