@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "buildCommand": "npm run build",
+  "buildCommand": "npx tsc && npx vite build",
   "outputDirectory": "dist",
   "headers": [
     {
@@ -32,5 +32,6 @@
         }
       ]
     }
-  ]
+  ],
+  "analytics": true
 } 
