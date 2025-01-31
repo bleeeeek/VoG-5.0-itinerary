@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS === 'true' ? '/VoG-5.0-itinerary/' : '/',
+  base: '/your-repo-name/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
