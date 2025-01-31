@@ -13,14 +13,14 @@ const getImagePath = (path: string) => {
 export const photos: BTSPhoto[] = [
   {
     id: '1',
-    url: getImagePath('/bts-photos/clothes/clothes.jpeg'),
-    description: 'Sorting of donated clothes for distribution',
+    url: '/bts-photos/clothes/clothes.jpeg',
+    description: 'Sorting and organizing donated clothes for distribution',
     category: 'Clothes'
   },
   {
     id: '2',
-    url: getImagePath('/bts-photos/preparation/water.jpeg'),
-    description: 'Water bottles ready for distribution',
+    url: '/bts-photos/preparation/water.jpeg',
+    description: 'Water bottles prepared for distribution',
     category: 'Preparation'
   },
   // Add more photos as needed
