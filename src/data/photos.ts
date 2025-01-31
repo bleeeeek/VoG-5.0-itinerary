@@ -14,13 +14,13 @@ export const photos: BTSPhoto[] = [
   {
     id: '1',
     url: '/bts-photos/clothes/clothes.jpeg',
-    description: 'Sorting and organizing donated clothes for distribution',
+    description: 'Organized clothing items ready for distribution',
     category: 'Clothes'
   },
   {
     id: '2',
     url: '/bts-photos/preparation/water.jpeg',
-    description: 'Water bottles prepared for distribution',
+    description: 'Cactus water bottles prepared for distribution',
     category: 'Preparation'
   },
   // Add more photos as needed
