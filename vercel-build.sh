@@ -1,5 +1,0 @@
-#!/bin/bash
-export NODE_OPTIONS="--max_old_space_size=4096"
-npm install -g vite
-npm ci
-npm run build 
