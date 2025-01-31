@@ -25,9 +25,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npm run gh-pages-build
         env:
-          BASE_URL: '/VoG-5.0-itinerary/'
+          GITHUB_ACTIONS: 'true'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

@@ -7,10 +7,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "vercel-build": "npm install vite && vite build",
+    "vercel-build": "vite build",
+    "gh-pages-build": "vite build --base=/VoG-5.0-itinerary/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run gh-pages-build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
