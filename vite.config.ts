@@ -8,25 +8,26 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/VoG-5.0-itinerary/',
+  base: process.env.BASE_URL || '/VoG-5.0-itinerary/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
   build: {
     outDir: 'dist',
-    assetsDir: '',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
-        entryFileNames: `assets/[name].[hash].js`,
-        chunkFileNames: `assets/[name].[hash].js`,
-        assetFileNames: `assets/[name].[hash].[ext]`
+        manualChunks: undefined,
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
     }
   },
   publicDir: 'public',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, './src')
     }
   }
 });
