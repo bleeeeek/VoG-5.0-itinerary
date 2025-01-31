@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/your-repo-name/',
+  base: '/',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
