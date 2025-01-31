@@ -13,7 +13,7 @@ export const GroupActivities: React.FC = () => {
           <h3 className="text-lg font-semibold text-blue-600">Food Distribution Teams</h3>
         </div>
         <div className="bg-blue-50 rounded-lg p-4">
-          <p className="font-medium mb-2">Groups 4, 6, and 7</p>
+          <p className="font-medium mb-2">Groups 4, 5, and 6</p>
           <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
             <li>Two sisters will prepare food packs (food box + water)</li>
             <li>One brother will handle distribution to those in need</li>
