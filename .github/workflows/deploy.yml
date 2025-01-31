@@ -3,10 +3,14 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
+      - gh-pages
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
+    # Only run on main branch
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: write
