@@ -1,7 +1,6 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
 import { TimelineEvent } from '../types';
-import { format } from 'date-fns';
 
 interface TimelineProps {
   events: TimelineEvent[];

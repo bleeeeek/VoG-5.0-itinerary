@@ -1,6 +1,6 @@
 import React from 'react';
 import { Car, Package, Droplet, Shirt, Home } from 'lucide-react';
-import { vehicles, inventoryLocations } from '../data/logistics';
+import { vehicles } from '../data/logistics';
 
 export const LogisticsInfo: React.FC = () => {
   const totalInventory = {

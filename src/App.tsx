@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { Map } from './components/Map';
 import { Timeline } from './components/Timeline';
@@ -6,7 +6,7 @@ import { LogisticsInfo } from './components/LogisticsInfo';
 import { Logo } from './components/Logo';
 import { events } from './data/events';
 import { TimelineEvent } from './types';
-import { MapPin, Calendar, Users, Package } from 'lucide-react';
+import { Calendar, Users } from 'lucide-react';
 import { BTS } from './components/BTS';
 import { GroupActivities } from './components/GroupActivities';
 
