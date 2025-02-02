@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, Shirt } from 'lucide-react';
+import { Users, Package, Shirt } from 'lucide-react';
 
 export const GroupActivities: React.FC = () => {
   return (
