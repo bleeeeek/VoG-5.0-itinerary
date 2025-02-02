@@ -3,7 +3,7 @@ import { TimelineEvent } from '../types';
 export const events: TimelineEvent[] = [
   {
     id: '1',
-    time: '8:00 PM',
+    time: '7:30 PM - 8:30 PM',
     location: {
       name: 'Sunway University (Level 9)',
       coordinates: [3.067422952979164, 101.60382838612972]
@@ -14,7 +14,7 @@ export const events: TimelineEvent[] = [
   },
   {
     id: '2',
-    time: '6:30 PM',
+    time: '6:30 PM - 6:50 PM',
     location: {
       name: 'Aman Bistro',
       coordinates: [3.068022906805213, 101.60234780676066]
@@ -36,7 +36,7 @@ export const events: TimelineEvent[] = [
   },
   {
     id: '4',
-    time: '8:00 PM',
+    time: '8:00 PM - 10:00 PM',
     location: {
       name: 'Chow Kit',
       coordinates: [3.161417, 101.697361]
@@ -47,7 +47,7 @@ export const events: TimelineEvent[] = [
   },
   {
     id: '6',
-    time: '10:00 PM',
+    time: '10:00 PM - 11:30 PM',
     location: {
       name: 'Bab Al Yemen Restaurant',
       coordinates: [3.041222, 101.706639]

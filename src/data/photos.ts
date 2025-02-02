@@ -1,18 +1,9 @@
-import clothesImage from '@/assets/bts-photos/clothes/clothes.jpeg'
-import waterImage from '@/assets/bts-photos/preparation/water.jpeg'
-
 export interface BTSPhoto {
   id: string;
   url: string;
   description: string;
   category: 'Clothes' | 'Food' | 'Preparation' | 'Other';
 }
-
-const getImagePath = (path: string) => {
-  // For GitHub Pages, we need to prefix with the repository name
-  // Remove the 'src' prefix since assets will be in the built directory
-  return path.replace('src/', '/');
-};
 
 export const photos: BTSPhoto[] = [
   {
