@@ -86,6 +86,7 @@ function App() {
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 3 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Allawi</li>
+                  <li>Refaat Hatem</li>
                   <li>Aslam Anis</li>
                   <li>Shafwan</li>
                   <li>Adnan Anwar</li>
@@ -96,7 +97,6 @@ function App() {
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Mohamed Azhan</li>
                   <li>Syed Mohammed Eshan Amir</li>
-                  <li>Refaat Hatem</li>
                   <li>Sidrat Shamim</li>
                   <li>Henar Abdul Wahab</li>
                   <li>Aiman Maqsood</li>

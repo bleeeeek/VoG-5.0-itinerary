@@ -12,8 +12,9 @@ export const vehicles: Vehicle[] = [
     group: 'Group 1',
     capacity: 8,
     inventory: {
-      foodPacks: 40,
-      waterBottles: 122,
+      foodPacks: 0,
+      waterBottles: 0,
+      clothingBoxes: 4
     }
   },
   {
@@ -27,8 +28,8 @@ export const vehicles: Vehicle[] = [
     group: 'Group 2',
     capacity: 6,
     inventory: {
-      foodPacks: 40,
-      waterBottles: 122,
+      foodPacks: 0,
+      waterBottles: 0,
       clothingBoxes: 3
     }
   },
@@ -43,8 +44,8 @@ export const vehicles: Vehicle[] = [
     group: 'Group 3',
     capacity: 6,
     inventory: {
-      foodPacks: 40,
-      waterBottles: 0,
+      foodPacks: 200,
+      waterBottles: 0
     }
   },
   {
@@ -58,9 +59,8 @@ export const vehicles: Vehicle[] = [
     group: 'Group 4',
     capacity: 6,
     inventory: {
-      foodPacks: 40,
-      waterBottles: 0,
-      clothingBoxes: 4
+      foodPacks: 0,
+      waterBottles: 244
     }
   },
   {
@@ -74,8 +74,8 @@ export const vehicles: Vehicle[] = [
     group: 'Group 5',
     capacity: 6,
     inventory: {
-      foodPacks: 40,
-      waterBottles: 0,
+      foodPacks: 0,
+      waterBottles: 0
     }
   }
 ];

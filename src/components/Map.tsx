@@ -37,6 +37,12 @@ export const Map: React.FC<MapProps> = ({ events, selectedEvent }) => {
         maxBounds={maxBounds}
         maxBoundsViscosity={1.0} // Make the bounds "sticky"
         style={{ zIndex: 0 }}
+        dragging={false}
+        touchZoom={false}
+        doubleClickZoom={false}
+        scrollWheelZoom={false}
+        boxZoom={false}
+        keyboard={false}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
