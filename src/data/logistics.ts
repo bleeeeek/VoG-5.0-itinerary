@@ -12,24 +12,24 @@ export const vehicles: Vehicle[] = [
     group: 'Group 1',
     capacity: 8,
     inventory: {
-      foodPacks: 75,
-      waterBottles: 144,
+      foodPacks: 40,
+      waterBottles: 122,
     }
   },
   {
     id: 'v2',
     plateNumber: 'TBD',
     driver: {
-      name: 'Refaat Hatem',
-      phone: '+60 11-6187 0833',
+      name: 'Moataz Alawadi',
+      phone: 'TBD',
       tagId: 'GRP-002'
     },
     group: 'Group 2',
     capacity: 6,
     inventory: {
-      foodPacks: 0,
-      waterBottles: 0,
-      clothingBoxes: 5
+      foodPacks: 40,
+      waterBottles: 122,
+      clothingBoxes: 3
     }
   },
   {
@@ -43,38 +43,38 @@ export const vehicles: Vehicle[] = [
     group: 'Group 3',
     capacity: 6,
     inventory: {
-      foodPacks: 75,
-      waterBottles: 144,
+      foodPacks: 40,
+      waterBottles: 0,
     }
   },
   {
     id: 'v4',
     plateNumber: 'TBD',
     driver: {
-      name: 'Saira Rafique',
-      phone: 'TBD',
+      name: 'Mohamed Azhan',
+      phone: '+60 14-501 5014',
       tagId: 'GRP-004'
     },
     group: 'Group 4',
     capacity: 6,
     inventory: {
-      foodPacks: 0,
+      foodPacks: 40,
       waterBottles: 0,
-      clothingBoxes: 6
+      clothingBoxes: 4
     }
   },
   {
     id: 'v5',
     plateNumber: 'TBD',
     driver: {
-      name: 'Mohamed Azhan',
-      phone: '+60 14-501 5014',
+      name: 'Azreen',
+      phone: 'TBD',
       tagId: 'GRP-005'
     },
     group: 'Group 5',
     capacity: 6,
     inventory: {
-      foodPacks: 0,
+      foodPacks: 40,
       waterBottles: 0,
     }
   }

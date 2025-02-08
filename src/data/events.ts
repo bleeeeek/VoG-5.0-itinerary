@@ -3,7 +3,7 @@ import { TimelineEvent } from '../types';
 export const events: TimelineEvent[] = [
   {
     id: '1',
-    time: '7:30 PM - 8:30 PM',
+    time: '8:00 PM - 9:00 PM',
     location: {
       name: 'Sunway University (Level 9)',
       coordinates: [3.067422952979164, 101.60382838612972]

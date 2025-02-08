@@ -19,8 +19,8 @@ export const LogisticsInfo: React.FC = () => {
         prayerSets: 6
       },
       men: {
-        shirts: 28,
-        pants: 16,
+        shirts: 31,
+        pants: 21,
         thobes: 1,
         suits: 2
       },

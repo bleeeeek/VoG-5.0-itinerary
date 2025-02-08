@@ -28,7 +28,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                  <span className="text-xs sm:text-base text-gray-600">6 Groups • 27 Volunteers</span>
+                  <span className="text-xs sm:text-base text-gray-600">5 Groups • 26 Volunteers</span>
                 </div>
               </div>
             </div>
@@ -75,9 +75,9 @@ function App() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 2 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                  <li>Refaat Hatem</li>
-                  <li>Naseem Ali Mansoor Ali</li>
                   <li>Moataz Alawadi</li>
+                  <li>Naseem Ali Mansoor Ali</li>
+                  <li>Omar El Shazly</li>
                   <li>Shaif Harmal</li>
                   <li>Hamaad Dulvi</li>
                 </ul>
@@ -94,8 +94,12 @@ function App() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 4 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                  <li>Saira Rafique</li>
-                  <li>Ayman Malik</li>
+                  <li>Mohamed Azhan</li>
+                  <li>Syed Mohammed Eshan Amir</li>
+                  <li>Refaat Hatem</li>
+                  <li>Sidrat Shamim</li>
+                  <li>Henar Abdul Wahab</li>
+                  <li>Aiman Maqsood</li>
                   <li>Waseemat Nabeeha</li>
                   <li>Amira Rashad Taha Omer</li>
                   <li>Ayesha Shajal</li>
@@ -103,17 +107,6 @@ function App() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 5 Members</h3>
-                <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                  <li>Mohamed Azhan</li>
-                  <li>Syed Mohammed Eshan Amir</li>
-                  <li>Sidrat Shamim</li>
-                  <li>Henar Abdul Wahab</li>
-                  <li>Aiman Maqsood</li>
-                  <li>Ayesha Wani</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 6 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Azreen</li>
                   <li>Sara</li>
