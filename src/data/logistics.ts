@@ -3,10 +3,10 @@ import { Vehicle, InventoryLocation } from '../types';
 export const vehicles: Vehicle[] = [
   {
     id: 'v1',
-    plateNumber: 'TBD',
+    plateNumber: 'Honda City',
     driver: {
       name: 'Muhammad Ahad',
-      phone: 'TBD',
+      phone: '+60 112664251 ',
       tagId: 'GRP-001'
     },
     group: 'Group 1',
@@ -14,15 +14,15 @@ export const vehicles: Vehicle[] = [
     inventory: {
       foodPacks: 0,
       waterBottles: 0,
-      clothingBoxes: 4
+      clothingBoxes: 7
     }
   },
   {
     id: 'v2',
-    plateNumber: 'TBD',
+    plateNumber: 'Proton Waja',
     driver: {
-      name: 'Moataz Alawadi',
-      phone: 'TBD',
+      name: 'Muhammad Ali',
+      phone: '+91 6656661115',
       tagId: 'GRP-002'
     },
     group: 'Group 2',
@@ -30,14 +30,14 @@ export const vehicles: Vehicle[] = [
     inventory: {
       foodPacks: 0,
       waterBottles: 0,
-      clothingBoxes: 3
+      clothingBoxes: 5
     }
   },
   {
     id: 'v3',
-    plateNumber: 'TBD',
+    plateNumber: 'Proton ',
     driver: {
-      name: 'Allawi',
+      name: 'Refaat Hatem',
       phone: 'TBD',
       tagId: 'GRP-003'
     },
@@ -50,7 +50,7 @@ export const vehicles: Vehicle[] = [
   },
   {
     id: 'v4',
-    plateNumber: 'TBD',
+    plateNumber: 'Toyota Innova',
     driver: {
       name: 'Mohamed Azhan',
       phone: '+60 14-501 5014',
@@ -80,4 +80,37 @@ export const vehicles: Vehicle[] = [
   }
 ];
 
-export const inventoryLocations: InventoryLocation[] = [];
+export const inventoryLocations: InventoryLocation[] = [
+  {
+    id: 'loc1',
+    name: "Women's Clothing",
+    items: [
+      { name: 'Shirts', quantity: 60 },
+      { name: 'Dresses', quantity: 26 },
+      { name: 'Formal Shirts', quantity: 30 },
+      { name: 'Pants', quantity: 56 },
+      { name: 'Jackets/Hoodies', quantity: 10 },
+      { name: 'Abayahs', quantity: 17 },
+      { name: 'Prayer Clothes/Shawls', quantity: 18 },
+      { name: 'Niqabs', quantity: 6 },
+      { name: 'Prayer Sets', quantity: 6 }
+    ]
+  },
+  {
+    id: 'loc2',
+    name: "Men's Clothing",
+    items: [
+      { name: 'Shirts', quantity: 31 },
+      { name: 'Pants', quantity: 21 },
+      { name: 'Thobes', quantity: 1 },
+      { name: 'Suits', quantity: 2 }
+    ]
+  },
+  {
+    id: 'loc3',
+    name: "Children's Clothing",
+    items: [
+      { name: 'Mixed Items', quantity: 30 }
+    ]
+  }
+];

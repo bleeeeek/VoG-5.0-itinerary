@@ -4,36 +4,25 @@ import { vehicles, inventoryLocations } from '../data/logistics';
 
 export const LogisticsInfo: React.FC = () => {
   const totalInventory = {
-    foodPacks: vehicles.reduce((sum, v) => sum + v.inventory.foodPacks, 0),
-    waterBottles: vehicles.reduce((sum, v) => sum + v.inventory.waterBottles, 0),
-    clothes: {
-      women: {
-        shirts: 60,
-        dresses: 26,
-        formalShirts: 30,
-        pants: 56,
-        jacketsAndHoodies: 10,
-        abayahs: 17,
-        prayerClothes: 18,
-        niqabs: 6,
-        prayerSets: 6
-      },
-      men: {
-        shirts: 31,
-        pants: 21,
-        thobes: 1,
-        suits: 2
-      },
-      household: {
-        towels: 7,
-        bedsheets: 5
-      }
+    foodPacks: vehicles.reduce((sum, v) => sum + (v.inventory.foodPacks || 0), 0),
+    waterBottles: vehicles.reduce((sum, v) => sum + (v.inventory.waterBottles || 0), 0),
+    clothes: inventoryLocations.reduce((sum, location) => {
+      return sum + location.items.reduce((itemSum, item) => itemSum + item.quantity, 0);
+    }, 0),
+    household: {
+      towels: 7,
+      bedsheets: 5
     }
   };
 
-  const totalWomensClothes = Object.values(totalInventory.clothes.women).reduce((a, b) => a + b, 0);
-  const totalMensClothes = Object.values(totalInventory.clothes.men).reduce((a, b) => a + b, 0);
-  const totalHouseholdItems = Object.values(totalInventory.clothes.household).reduce((a, b) => a + b, 0);
+  // Get women's clothing items
+  const womensClothing = inventoryLocations.find(loc => loc.name === "Women's Clothing")?.items || [];
+  // Get men's clothing items
+  const mensClothing = inventoryLocations.find(loc => loc.name === "Men's Clothing")?.items || [];
+  // Get children's clothing items
+  const childrensClothing = inventoryLocations.find(loc => loc.name === "Children's Clothing")?.items || [];
+
+  const totalHouseholdItems = Object.values(totalInventory.household).reduce((a, b) => a + b, 0);
 
   return (
     <div className="space-y-4 sm:space-y-8">
@@ -60,7 +49,7 @@ export const LogisticsInfo: React.FC = () => {
               <Shirt className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
               <h3 className="font-semibold text-sm sm:text-base">Total Clothes</h3>
             </div>
-            <p className="text-xl sm:text-2xl font-bold text-blue-600">{totalWomensClothes + totalMensClothes}</p>
+            <p className="text-xl sm:text-2xl font-bold text-blue-600">{totalInventory.clothes}</p>
           </div>
           <div className="bg-blue-50 p-3 sm:p-4 rounded-lg">
             <div className="flex items-center space-x-2 mb-2">
@@ -77,28 +66,31 @@ export const LogisticsInfo: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Women's Clothing */}
             <div className="bg-pink-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-pink-700 mb-3">Women's Clothing ({totalWomensClothes})</h4>
+              <h4 className="font-semibold text-pink-700 mb-3">
+                Women's Clothing ({womensClothing.reduce((sum, item) => sum + item.quantity, 0)})
+              </h4>
               <ul className="space-y-2 text-sm">
-                <li className="flex justify-between"><span>Shirts:</span> <span>{totalInventory.clothes.women.shirts}</span></li>
-                <li className="flex justify-between"><span>Dresses:</span> <span>{totalInventory.clothes.women.dresses}</span></li>
-                <li className="flex justify-between"><span>Formal Shirts:</span> <span>{totalInventory.clothes.women.formalShirts}</span></li>
-                <li className="flex justify-between"><span>Pants:</span> <span>{totalInventory.clothes.women.pants}</span></li>
-                <li className="flex justify-between"><span>Jackets/Hoodies:</span> <span>{totalInventory.clothes.women.jacketsAndHoodies}</span></li>
-                <li className="flex justify-between"><span>Abayahs:</span> <span>{totalInventory.clothes.women.abayahs}</span></li>
-                <li className="flex justify-between"><span>Prayer Clothes/Shawls:</span> <span>{totalInventory.clothes.women.prayerClothes}</span></li>
-                <li className="flex justify-between"><span>Niqabs:</span> <span>{totalInventory.clothes.women.niqabs}</span></li>
-                <li className="flex justify-between"><span>Prayer Sets:</span> <span>{totalInventory.clothes.women.prayerSets}</span></li>
+                {womensClothing.map(item => (
+                  <li key={item.name} className="flex justify-between">
+                    <span>{item.name}:</span>
+                    <span>{item.quantity}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Men's Clothing */}
             <div className="bg-blue-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-blue-700 mb-3">Men's Clothing ({totalMensClothes})</h4>
+              <h4 className="font-semibold text-blue-700 mb-3">
+                Men's Clothing ({mensClothing.reduce((sum, item) => sum + item.quantity, 0)})
+              </h4>
               <ul className="space-y-2 text-sm">
-                <li className="flex justify-between"><span>Shirts:</span> <span>{totalInventory.clothes.men.shirts}</span></li>
-                <li className="flex justify-between"><span>Pants:</span> <span>{totalInventory.clothes.men.pants}</span></li>
-                <li className="flex justify-between"><span>Thobes:</span> <span>{totalInventory.clothes.men.thobes}</span></li>
-                <li className="flex justify-between"><span>Suits:</span> <span>{totalInventory.clothes.men.suits}</span></li>
+                {mensClothing.map(item => (
+                  <li key={item.name} className="flex justify-between">
+                    <span>{item.name}:</span>
+                    <span>{item.quantity}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -106,8 +98,8 @@ export const LogisticsInfo: React.FC = () => {
             <div className="bg-gray-50 p-4 rounded-lg">
               <h4 className="font-semibold text-gray-700 mb-3">Household Items ({totalHouseholdItems})</h4>
               <ul className="space-y-2 text-sm">
-                <li className="flex justify-between"><span>Towels:</span> <span>{totalInventory.clothes.household.towels}</span></li>
-                <li className="flex justify-between"><span>Bedsheets:</span> <span>{totalInventory.clothes.household.bedsheets}</span></li>
+                <li className="flex justify-between"><span>Towels:</span> <span>{totalInventory.household.towels}</span></li>
+                <li className="flex justify-between"><span>Bedsheets:</span> <span>{totalInventory.household.bedsheets}</span></li>
               </ul>
             </div>
           </div>

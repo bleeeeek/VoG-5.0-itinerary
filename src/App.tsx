@@ -28,7 +28,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-                  <span className="text-xs sm:text-base text-gray-600">5 Groups • 26 Volunteers</span>
+                  <span className="text-xs sm:text-base text-gray-600">5 Groups • 23 Volunteers</span>
                 </div>
               </div>
             </div>
@@ -67,7 +67,6 @@ function App() {
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                   <li>Muhammad Ahad</li>
                   <li>Adil Karim Barbhuiya</li>
-                  <li>Muhammad Ali</li>
                   <li>Umar Imran</li>
                   <li>Abdulrahman Musse</li>
                 </ul>
@@ -75,19 +74,16 @@ function App() {
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 2 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                  <li>Moataz Alawadi</li>
+                  <li>Muhammad Ali</li>
                   <li>Naseem Ali Mansoor Ali</li>
-                  <li>Omar El Shazly</li>
-                  <li>Shaif Harmal</li>
-                  <li>Hamaad Dulvi</li>
+                  <li>Aslam Anis</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-3 text-blue-600">Group 3 Members</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
-                  <li>Allawi</li>
                   <li>Refaat Hatem</li>
-                  <li>Aslam Anis</li>
+                  <li>Omar El Shazly</li>
                   <li>Shafwan</li>
                   <li>Adnan Anwar</li>
                 </ul>
