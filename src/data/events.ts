@@ -14,7 +14,7 @@ export const events: TimelineEvent[] = [
   },
   {
     id: '2',
-    time: '6:30 PM - 6:50 PM',
+    time: '6:00 PM - 6:20 PM',
     location: {
       name: 'Aman Bistro',
       coordinates: [3.068022906805213, 101.60234780676066]
